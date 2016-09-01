@@ -1,7 +1,6 @@
 #include <iostream>
 
 using namespace std;
-int* ct;
 
 int get_change(int m) {
 	
