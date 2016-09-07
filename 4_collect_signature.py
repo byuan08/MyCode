@@ -1,17 +1,17 @@
+
+#! python3
 import sys
 
 def get_min_points_to_cover_segments(n, segments):
   if len(segments) > 0:
+    count ++
     endpoint_cur = segments.pop()[1]
-    # Only check the points whose start point is smaller than the current end point
-    i = 0
-    for x in range(1:n-1)
-      count++
-      position.append(endpoint_cur)
-      i++
-    
-    n = n-i
-      
+    for x in segments
+      # Only check the points whose start point is smaller than the current end point
+      if x.[0] > endpoint_cur:
+        break
+      else:
+        segments.pop(0)
       
     
 if __name__ == "__main__":
