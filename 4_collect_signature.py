@@ -12,6 +12,7 @@ def get_min_points_to_cover_segments(segments):
             if x[0] > endpoint_cur:
                 continue
             # These segments are covered by current point
+            # Remove them from future consideration
             else:
                 segments.remove(x)
         return position + get_min_points_to_cover_segments(segments)
@@ -36,9 +37,10 @@ if __name__ == "__main__":
 
     position = get_min_points_to_cover_segments(segs)
     print(len(position))
+    print("list is ", position)
     for x in position:
-        print(x)
-        print(" ")
+        print(x, end=' ')
+       
   
   
   
