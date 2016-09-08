@@ -7,13 +7,16 @@ def get_min_points_to_cover_segments(segments):
         position = list()
         position.append(endpoint_cur)
 
-        for x in segments:
+        # using slicing to copy the list for iteration since the list
+        # gets changed within the loop
+        for x in segments[:]:
             # Only check the points whose start point is smaller than the current end point
             if x[0] > endpoint_cur:
                 continue
             # These segments are covered by current point
             # Remove them from future consideration
             else:
+                #print("covered seg:", x)
                 segments.remove(x)
         return position + get_min_points_to_cover_segments(segments)
 
@@ -37,7 +40,6 @@ if __name__ == "__main__":
 
     position = get_min_points_to_cover_segments(segs)
     print(len(position))
-    print("list is ", position)
     for x in position:
         print(x, end=' ')
        
