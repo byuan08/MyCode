@@ -29,4 +29,4 @@ if __name__ == "__main__":
 	summands = get_max_number_of_summands(n, 1)
 	print(len(summands))
 	for x in summands:
-		#print(x, end=' ')
+		print(x, end=' ')
