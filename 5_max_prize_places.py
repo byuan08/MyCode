@@ -5,23 +5,24 @@ def get_max_number_of_summands(n, l):
 	summands = []
 
 	if n < l:
+		print('The input has to be interger bigger than 0')
 		return []
 		#print("case 1")
 
-
-	elif n <= 2 * l:
-		summands.append(n)
-		#print("case 2,  n = {}, l = {}, summands = {}".format(n, l, summands))
-		return summands
-
-	else:
-		summands.append(l)
+	while ():
+		if n > 2*l:
+			summands.append(l)
+			n -= l
+			l += 1
+			#print ("case 3,  n = {}, l = {}, summands = {}".format(n, l, summands))
+			continue
+			
 		
-		summands += get_max_number_of_summands(n-l, l+1)
-		#print ("case 3,  n = {}, l = {}, summands = {}".format(n, l, summands))
-		return summands
-
-
+		if n <= 2 * l:
+			summands.append(n)
+			#print("case 2,  n = {}, l = {}, summands = {}".format(n, l, summands))
+			return summands
+	
 if __name__ == "__main__":
 	n = int(sys.stdin.readline())
 	summands = get_max_number_of_summands(n, 1)
