@@ -1,7 +1,7 @@
 import sys
-from math import log10
+from math import log10, floor
 
-n_digit = lambda x: round(log10(x))
+n_digit = lambda x: floor(log10(x))
 def MSD(x): return x / 10 ** n_digit(x)
 def rest_from_MSD(x): return x % 10 ** n_digit(x)
 
