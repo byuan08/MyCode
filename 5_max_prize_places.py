@@ -23,9 +23,7 @@ def get_max_number_of_summands(n, l):
 			return summands
 	
 if __name__ == "__main__":
-	print('running main')
 	n = int(sys.stdin.readline())
-	print("n= ",n)
 	summands = get_max_number_of_summands(n, 1)
 	print(len(summands))
 	for x in summands:
