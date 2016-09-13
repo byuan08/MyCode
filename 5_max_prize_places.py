@@ -1,5 +1,6 @@
 #! /usr/local/bin/python3
 import sys
+import pdb
 
 def get_max_number_of_summands(n, l):
 	summands = []
@@ -23,6 +24,7 @@ def get_max_number_of_summands(n, l):
 			return summands
 	
 if __name__ == "__main__":
+	pdb.set_trace()
 	n = int(sys.stdin.readline())
 	summands = get_max_number_of_summands(n, 1)
 	print(len(summands))
