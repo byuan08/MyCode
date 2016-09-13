@@ -16,33 +16,33 @@ def is_greater_or_equal(m,n):
 	elif MSD(m) < MSD(n): return n
 
 	else: 
-		if :
+		#if :
 
 
 		return is_greater_or_equal(rest_from_MSD(m), rest_from_MSD(n))
 
-'''
-41 % 10 = (4,1)
-40 % 10 = (4,0)
-4 % 10 =  (0,4)
-'''
+# '''
+# 41 % 10 = (4,1)
+# 40 % 10 = (4,0)
+# 4 % 10 =  (0,4)
+# '''
 
-def is_greater_or_equal(m,n):
+# def is_greater_or_equal(m,n):
 
-	str_m = str(m)
-	str_n = str(n)
-	digits_m = len(str_m)
-	digits_n = len(str_n)
+# 	str_m = str(m)
+# 	str_n = str(n)
+# 	digits_m = len(str_m)
+# 	digits_n = len(str_n)
 
-	if int(str_m[digits_m]) < int(str_n[digits_n]):
+# 	if int(str_m[digits_m]) < int(str_n[digits_n]):
 
-		return n
+# 		return n
 
-	if int(str_m[digits_m]) > int(str_n[digits_n]):
+# 	if int(str_m[digits_m]) > int(str_n[digits_n]):
 
-		return m
+# 		return m
 
-	if int(str_m[digits_m]) = int(str_n[digits_n]):
+# 	if int(str_m[digits_m]) = int(str_n[digits_n]):
 
 		
 

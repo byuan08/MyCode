@@ -1,10 +1,13 @@
 import unittest
+import pdb
 from maximize_the_salary import *
 
-
 class MSDTestCase(unittest.TestCase):
-	
+	def setUp():
+		print("Setting up")
+
 	def test_MSD_100(self):
+		pdb.set_trace()
 		self.assertEqual(MSD(100),1)
 
 	def test_MSD_1(self):
